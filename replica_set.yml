@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+
+metadata:
+  name: name_of_replica_set_pod
+  # labels could be any key value pair
+  labels:
+    app: guestbook
+    tier: frontend
+    
+spec:
+
+  # templates contains the metadata and spec of the pod
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+      - name: container_name
+        image: container_image_url:varsion
+        
+  # modify replicas according to your case
+  replicas: 3
+  
+  # matchLabels contains labels of the created pods whose replica set you are creating
+  selector:
+    matchLabels:
+      tier: frontend
