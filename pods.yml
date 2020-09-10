@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+      labels:
+        tier: tire_name
+    spec:
+      containers:
+      - name: container_name
+        image: container_image_url:varsion
+        ports:
+          - name: web
+            containerPort: 80
+            protocol: TCP
