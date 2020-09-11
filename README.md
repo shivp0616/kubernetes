@@ -25,6 +25,9 @@
   * kubectl get replicaset
 * see all the pods
   * kubectl get pods
+* scale
+  * update the replica_set.yml file (change replicas = x)
+    * kubectl replace -f replica_set.yml
   
  
 ## Namespaces
