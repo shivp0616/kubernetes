@@ -28,7 +28,8 @@
 * scale
   * update the replica_set.yml file (change replicas = x)
     * kubectl replace -f replica_set.yml
-  
+  * kubectl scale --replicas=x -f replica_set.yml
+  * kubectl scale --replicas=x replicaset replica_set_name
  
 ## Namespaces
 * create namespace
