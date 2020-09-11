@@ -30,6 +30,8 @@
     * kubectl replace -f replica_set.yml
   * kubectl scale --replicas=x -f replica_set.yml
   * kubectl scale --replicas=x replicaset replica_set_name
+* delete
+  * kubectl delete replicaset replica_set_name (*Also deletes all underlying Pods)
  
 ## Namespaces
 * create namespace
