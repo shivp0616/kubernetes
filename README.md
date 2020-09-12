@@ -38,3 +38,11 @@
 ## Namespaces
 * create namespace
   * kubectl create namespace namespace_name
+  
+
+## Deployment
+* create deployment
+  * kubectl create -f deployment.yml
+  
+## View all
+* kubectl get all 
