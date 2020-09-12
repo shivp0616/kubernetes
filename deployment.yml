@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: myapp-deployment
+  labels:
+    key_1: value_1
+    
+spec:
+  template:
+    metadata:
+      labels:
+        key_1: value_1
+    spec:
+      containers:
+      - name: image_name
+        image: image_url:version
+        ports:
+        - containerPort: 80
+  replicas: 3
+  selector:
+      matchLabels:
+        key_1: value_1
