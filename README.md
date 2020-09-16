@@ -46,3 +46,7 @@
   
 ## View all
 * kubectl get all 
+
+## Nodegroup
+* create nodegroup
+  * eksctl create nodegroup --config-file= nodegroup.yml
