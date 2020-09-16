@@ -1,0 +1,17 @@
+kind: ClusterConfig
+apiVersion: eksctl.io/v1alpha5
+metadata:
+    name: yourClusterName
+    region: yourRegionName
+nodeGroups:
+  - name: ng-2-builders #example of a nodegroup that uses 100% spot instances
+    minSize: 1
+    maxSize: 5
+    desiredCapacity: 1
+    instancesDistribution:
+      maxPrice: 0.017
+      instanceTypes: ["t3.micro", "t3.small"] # At least two instance types should be specified
+      onDemandBaseCapacity: 0
+      onDemandPercentageAboveBaseCapacity: 0
+    tags:
+      'key': 'value'
