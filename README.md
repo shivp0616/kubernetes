@@ -50,3 +50,9 @@
 ## Nodegroup
 * create nodegroup
   * eksctl create nodegroup --config-file= nodegroup.yml
+* Listing nodegroups
+  * eksctl get nodegroup --cluster=<clusterName> [--name=<nodegroupName>]
+* scaling
+  * eksctl scale nodegroup --cluster=<clusterName> --nodes=<desiredCount> --name=<nodegroupName> [ --nodes-min=<minSize> ] [ --nodes-max=<maxSize> ]
+* drain
+  * eksctl drain nodegroup --cluster=<clusterName> --name=<nodegroupName>
