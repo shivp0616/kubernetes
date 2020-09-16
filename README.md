@@ -56,3 +56,5 @@
   * eksctl scale nodegroup --cluster=<clusterName> --nodes=<desiredCount> --name=<nodegroupName> [ --nodes-min=<minSize> ] [ --nodes-max=<maxSize> ]
 * drain
   * eksctl drain nodegroup --cluster=<clusterName> --name=<nodegroupName>
+* delete
+  * eksctl delete nodegroup --cluster=<clusterName> --name=<nodegroupName>
