@@ -1,6 +1,9 @@
 # Kubernetes Commands
  Below are comands to implent the given files
 
+## To create or update the kubeconfig file for your EKS cluster, run the following command:
+   * aws eks --region region update-kubeconfig --name cluster_name
+
 
 ## Pods
 * create pod
