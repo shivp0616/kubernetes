@@ -1,0 +1,37 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: cluster-name
+  region: region-name
+  
+vpc:
+  id: "VpcId"
+  cidr: "CidrBlock"
+  subnets:
+    private:
+      AvailabilityZone:
+          id: "SubnetId"
+          cidr: "CidrBlock"
+      AvailabilityZone:
+          id: "SubnetId"
+          cidr: "CidrBlock"
+    public:
+      AvailabilityZone:
+          id: "SubnetId"
+          cidr: "CidrBlock"
+      AvailabilityZone:
+          id: "subnet-0807deaf7647d803c"
+          cidr: "1CidrBlock"
+
+nodeGroups:
+  - name: ng-1  # 100% spot price
+    minSize: 1
+    maxSize: 5
+    desiredCapacity: 1
+    instancesDistribution:
+      maxPrice: 0.03
+      instanceTypes: ["m5.large"] # At least one instance types should be specified
+      onDemandBaseCapacity: 0
+      onDemandPercentageAboveBaseCapacity: 0
+  
