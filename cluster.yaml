@@ -11,18 +11,18 @@ vpc:
   subnets:
     private:
       AvailabilityZone:
-          id: "SubnetId"
-          cidr: "CidrBlock"
+          id: "SubnetId1"
+          cidr: "CidrBlock1"
       AvailabilityZone:
-          id: "SubnetId"
-          cidr: "CidrBlock"
+          id: "SubnetId2"
+          cidr: "CidrBlock2"
     public:
       AvailabilityZone:
-          id: "SubnetId"
-          cidr: "CidrBlock"
+          id: "SubnetId3"
+          cidr: "CidrBlock3"
       AvailabilityZone:
-          id: "subnet-0807deaf7647d803c"
-          cidr: "1CidrBlock"
+          id: "SubnetId4"
+          cidr: "CidrBlock4"
 
 nodeGroups:
   - name: ng-1  # 100% spot price
