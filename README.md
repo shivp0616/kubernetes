@@ -42,6 +42,15 @@
 * create namespace
   * kubectl create namespace namespace_name
   
+## ResourceQuota (Limit resourse in namespace)
+* create ResourseQuota
+  *  kubectl apply -f ResourceQuota.yml
+* see all the ResourseQuotas
+  *  kubectl get ResourceQuota --all-namespaces
+* delete ResourseQuota
+  *  kubectl delete -f ResourceQuota.yml
+
+  
 
 ## Deployment
 * create deployment
